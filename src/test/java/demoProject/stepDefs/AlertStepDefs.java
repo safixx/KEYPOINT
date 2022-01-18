@@ -13,6 +13,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
 public class AlertStepDefs {
+
     AlertPage alertClass = new AlertPage();
 
     @Given("the user is on the demoqa webpage")
@@ -92,7 +93,7 @@ public class AlertStepDefs {
     public void the_user_enters_name() {
         BrowserUtils.waitFor(1);
         Alert alert = Driver.get().switchTo().alert();
-        alert.sendKeys("Oscar");
+        alert.sendKeys("Saffet");
         alert.accept();
         BrowserUtils.waitFor(1);
     }
